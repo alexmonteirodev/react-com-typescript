@@ -1,4 +1,3 @@
-import React from "react";
 import Aula001 from "./exercicios/ex001-inferencia/Aula";
 
 const App = () => {
