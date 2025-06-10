@@ -3,7 +3,7 @@ import Button from "./Button";
 
 // - Props
 //ver compontente button
-const Aula002 = () => {
+const Aula003 = () => {
   const [total, setTotal] = React.useState(0);
 
   function incrementar() {
@@ -20,4 +20,4 @@ const Aula002 = () => {
   );
 };
 
-export default Aula002;
+export default Aula003;
