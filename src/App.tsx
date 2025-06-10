@@ -1,10 +1,10 @@
 // import Aula001 from "./exercicios/ex001-inferencia/Aula";
-import Aula002 from "./exercicios/ex002-props/Aula";
+import Aula003 from "./exercicios/ex003-props-part2/Aula";
 
 const App = () => {
   return (
     <div>
-      <Aula002 />
+      <Aula003 />
     </div>
   );
 };
