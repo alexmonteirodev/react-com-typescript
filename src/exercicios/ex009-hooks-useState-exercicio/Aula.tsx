@@ -31,8 +31,18 @@ function Aula009() {
   return (
     <div>
       <Data setData={setData} inicio={inicio} final={final} />
-      <Input id="inicio" txt="Início:" onChange={handleInicio} />
-      <Input id="final" txt="Final:" onChange={handleInicio} />
+      <Input
+        id="inicio"
+        labelTxt="Início:"
+        value={inicio}
+        onChange={handleInicio}
+      />
+      <Input
+        id="final"
+        labelTxt="Final:"
+        value={final}
+        onChange={handleInicio}
+      />
       <ul>
         {data?.map(({ nome, status }, i) => (
           <li key={i}>

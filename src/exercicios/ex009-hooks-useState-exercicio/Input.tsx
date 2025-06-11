@@ -2,13 +2,13 @@ import React from "react";
 
 type IputType = React.ComponentProps<"input"> & {
   id: string;
-  txt: string;
+  labelTxt: string;
 };
 
-const Input = ({ id, txt, ...props }: IputType) => {
+const Input = ({ id, labelTxt, ...props }: IputType) => {
   return (
     <div style={{ marginBottom: "1rem", maxWidth: "500px" }}>
-      <label htmlFor={id}>{txt}</label>
+      <label htmlFor={id}>{labelTxt}</label>
       <input type="date" id={id} name={id} {...props} />
     </div>
   );

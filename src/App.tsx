@@ -1,9 +1,9 @@
-import Aula009 from "./exercicios/ex009-hooks-useState-exercicio/Aula";
+import Aula010 from "./exercicios/ex010-hooks-useEffect/Aula";
 
 const App = () => {
   return (
     <div>
-      <Aula009 />
+      <Aula010 />
     </div>
   );
 };
