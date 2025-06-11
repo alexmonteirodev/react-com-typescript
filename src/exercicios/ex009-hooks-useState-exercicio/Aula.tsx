@@ -1,5 +1,6 @@
 import React from "react";
 import Data from "./Data";
+import Input from "./Input";
 
 // - Exercicio
 
@@ -15,12 +16,30 @@ import Data from "./Data";
 // 7 - Caso data seja diferente de null, mostre na tela o nome e o status de cada venda do período selecionado
 
 function Aula009() {
-  const [data, setData] = React.useState(null);
+  const [data, setData] = React.useState<ApiInterface[] | null>(null);
+  const [inicio, setInicio] = React.useState("");
+  const [final, setFinal] = React.useState("");
+
+  function handleInicio({ target }: React.ChangeEvent<HTMLInputElement>) {
+    if (target.id === "inicio") {
+      setInicio(target.value);
+    } else if (target.id === "final") {
+      setFinal(target.value);
+    }
+  }
   console.log(data);
   return (
     <div>
-      <Data setData={setData} />
-      {data ? data[0].nome : "null"}
+      <Data setData={setData} inicio={inicio} final={final} />
+      <Input id="inicio" txt="Início:" onChange={handleInicio} />
+      <Input id="final" txt="Final:" onChange={handleInicio} />
+      <ul>
+        {data?.map(({ nome, status }, i) => (
+          <li key={i}>
+            {nome}: {status}
+          </li>
+        ))}
+      </ul>
     </div>
   );
 }
