@@ -1,10 +1,9 @@
-// import Aula001 from "./exercicios/ex001-inferencia/Aula";
-import Aula007 from "./exercicios/ex007-eventos/Aula";
+import Aula008 from "./exercicios/ex008-hooks-useState/Aula";
 
 const App = () => {
   return (
     <div>
-      <Aula007 />
+      <Aula008 />
     </div>
   );
 };
