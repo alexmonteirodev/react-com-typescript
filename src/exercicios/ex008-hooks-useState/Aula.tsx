@@ -2,7 +2,7 @@ import React from "react";
 import Button from "./Button";
 
 // - useState
-// O React faz um bo trabalho ao inferir o type quando passamos o valor do useState, o problem é quando o tipo pode ser multiplos tipos (em um fetch por exemplo)
+// O React faz um bom trabalho ao inferir o type quando passamos o valor do useState, o problem é quando o tipo pode ser multiplos tipos (em um fetch por exemplo)
 // Generics para definir os possíveis tipos: useState<null | User>(null).
 //Outro problema que podemos ter é quando vamos passar o state para outro componente, ai também teremos que anotar o tipo no outro componente, no state o primeiro elemento é simple, é o valor e o setSegundoElemento, basta colocar o mouse em cima para ver o type
 
