@@ -28,4 +28,4 @@ export default Content;
 //   const frutas = ["banana", "doce"];
 
 //   const [fruta, sabor] = frutas;
-//   console.log(fruta, sabor);
+//   console.log(fruta, sabor) //"banana", "doce"
